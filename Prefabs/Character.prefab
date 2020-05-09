@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1014070142854551459}
   - component: {fileID: 1014070142854551456}
   - component: {fileID: 130452757}
+  - component: {fileID: 729193691}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -130,9 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 1014070142854551459}
-  currentAngleOfView: {x: 0, y: 0, z: 0}
-  speedOfRotateX: 5
-  speedOfRotateY: 5
   speed: 6
   jumpSpeed: 11
   gravity: 20
@@ -149,6 +147,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d929addc5433743b4443037e2c7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &729193691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014070142854551470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361c561db3798d8458684f568adba43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAngleOfView: {x: 0, y: 0, z: 0}
+  speedOfRotateX: 5
+  speedOfRotateY: 5
 --- !u!1 &1014070143296436171
 GameObject:
   m_ObjectHideFlags: 0
