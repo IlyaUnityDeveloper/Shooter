@@ -15,8 +15,6 @@ public class CharacterLookBehavior : MonoBehaviour
 		currentAngleOfView.x = currentAngleOfView.x - Input.GetAxis("Mouse Y") * speedOfRotateX;
 		currentAngleOfView.y = currentAngleOfView.y + Input.GetAxis("Mouse X") * speedOfRotateY;
 		
-		transform.rotation = Quaternion.Euler (currentAngleOfView.x, currentAngleOfView.y, 0);
-		
 		//Ограничение угола наклона камеры по вертикали
 		if (currentAngleOfView.x < -89f)
 		{
@@ -27,5 +25,7 @@ public class CharacterLookBehavior : MonoBehaviour
 		{
 			currentAngleOfView.x = 89f;
 		}
+		
+		transform.rotation = Quaternion.Euler (currentAngleOfView.x, currentAngleOfView.y, 0);
 	}
 }
