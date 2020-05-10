@@ -13,12 +13,18 @@ public class EnemyBehavior : MonoBehaviour
 	void Start()
 	{
 		agent = GetComponent<NavMeshAgent>();
+		displayHealth.text = "Health: "+health;
 	}
 	
 	void Update()
 	{
 		//Взять у главной камеры позицию игрока
 		agent.SetDestination(Camera.main.GetComponent<PropertiesScene>().player.position);
+	}
+	
+	public void TakeDamage (int damage)
+	{
+		health -= damage;
 		
 		if (health <= 0)
 		{

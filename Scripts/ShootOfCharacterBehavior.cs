@@ -30,7 +30,7 @@ public class ShootOfCharacterBehavior : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<EnemyBehavior>())
 			{
 				//Отнять 4 единицы здоровье
-				hit.collider.gameObject.GetComponent<EnemyBehavior>().health -= 4;
+				hit.collider.gameObject.GetComponent<EnemyBehavior>().TakeDamage(4);
 			}
         }
     }
