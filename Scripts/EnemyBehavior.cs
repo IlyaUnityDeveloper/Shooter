@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+//Скрипт прикриплен к Enemy
 public class EnemyBehavior : MonoBehaviour
 {
     public int health = 12;

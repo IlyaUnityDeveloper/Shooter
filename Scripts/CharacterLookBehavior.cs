@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Скрипт прикриплен к Character
 public class CharacterLookBehavior : MonoBehaviour
 {
     [SerializeField]
